@@ -5,11 +5,14 @@ import "./globals.css";
 import {
   CONTACT_EMAIL,
   DEFAULT_TITLE,
+  OG_IMAGE_CACHE_KEY,
   SITE_DESCRIPTION,
   SITE_NAME,
   SITE_URL,
   SITE_TAGLINE,
 } from "@/lib/site-config";
+
+const ogImagePath = `/opengraph-image?${OG_IMAGE_CACHE_KEY}`;
 
 const inter = Inter({
   variable: "--font-inter",
@@ -67,11 +70,20 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: DEFAULT_TITLE,
     description: SITE_TAGLINE,
+    images: [
+      {
+        url: ogImagePath,
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} — AI growth systems for B2B`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: DEFAULT_TITLE,
     description: SITE_TAGLINE,
+    images: [ogImagePath],
   },
   robots: {
     index: true,

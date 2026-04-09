@@ -18,3 +18,6 @@ export const SITE_TAGLINE =
   "Lead generation, sales automation, and RevOps powered by AI—built for B2B teams ready to scale.";
 
 export const CONTACT_EMAIL = "abubakr@blinkive.com";
+
+/** Bump this string when you want chat/social apps to re-fetch the share image (OG cache bust). */
+export const OG_IMAGE_CACHE_KEY = "v3";
