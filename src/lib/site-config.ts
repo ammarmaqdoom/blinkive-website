@@ -20,6 +20,6 @@ export const SITE_TAGLINE =
 export const CONTACT_EMAIL = "abubakr@blinkive.com";
 
 /** Bump this string when you want chat/social apps to re-fetch the share image (OG cache bust). */
-export const OG_IMAGE_CACHE_KEY = "v4";
+export const OG_IMAGE_CACHE_KEY = "v5";
 
 export const LOGO_PATH = "/brand/blinkive-mark.svg";
